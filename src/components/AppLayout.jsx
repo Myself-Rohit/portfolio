@@ -11,7 +11,7 @@ function AppLayout() {
         <div className='flex flex-col sm:flex-row'>
             <Header />
             <Sidebar/>
-            <div className='bg-black w-full text-white overflow-x-hidden'>
+            <div className='bg-black w-full overflow-x-hidden'>
                 <Home/>
                 <About />
                 <Projects />
