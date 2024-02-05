@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import photoAbout from '../images/photoAbout.jpg'
+import Skills from './Skills'
 
 function About() {
   return (
-    <div id="about" className="flex flex-col items-center h-screen" >
+    <div id="about" className="flex flex-col items-centerpt-10 sm:pt-5" >
       <div className="sm:mx-10">
         <h1 className="text-white text-4xl font-bold ">
           About<span className="text-cyan-600">Me</span>
@@ -33,6 +34,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Skills/>
     </div>
   )
 }
