@@ -16,11 +16,11 @@ function Skills() {
     return (
         <div className='p-10 pb-0 flex flex-col items-center'>
             <h1 className=' font-bold text-xl text-gray-400 text-center underline underline-offset-4'>My Skills</h1>
-            <div className='flex flex-wrap items-center justify-center gap-5 mt-7 border-b border-gray-400 p-5'>
+            <div className='flex flex-wrap items-center justify-center gap-5 mt-7 p-5'>
                 {
                     mySkills.map(skill => {
                         return (
-                            <div key={skill.id} className='w-20 h-20 sm:w-32 sm:h-32 bg-white bg-opacity-55 p-2 rounded-md'>
+                            <div key={skill.id} className='w-20 h-20 sm:w-32 sm:h-32 border-b-2 hover:border-black hover:scale-95 border-cyan-600 p-2 rounded-full'>
                                 <img src={skill.image} className='w-full h-full' />
                             </div>
                         )

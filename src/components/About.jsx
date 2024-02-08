@@ -5,7 +5,7 @@ import Skills from './Skills'
 
 function About() {
   return (
-    <div id="about" className="flex flex-col items-centerpt-10 sm:pt-5" >
+    <div id="about" className="flex flex-col items-center pt-10 sm:pt-5 bg-gradient-to-r from-black to-slate-900" >
       <div className="sm:mx-10">
         <h1 className="text-white text-4xl font-bold ">
           About<span className="text-cyan-600">Me</span>

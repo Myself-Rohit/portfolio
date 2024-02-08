@@ -4,7 +4,7 @@ import projects from './projectData.js'
 function Projects() {
   
   return (
-    <div id='projects' className='h-screen p-10 sm:pb-0 text-white'>
+    <div id='projects' className='h-screen p-10 sm:pb-0 text-white bg-gradient-to-r from-slate-900 to-black'>
       <h1 className="text-white text-4xl font-bold text-center">
           My<span className="text-cyan-600">Projects</span>
         </h1>
@@ -12,7 +12,7 @@ function Projects() {
         {
         projects.map(project => {
           return (
-            <div key={project.id} className={`flex flex-col items-start justify-between w-full shrink-0 border border-cyan-300 shadow shadow-cyan-500 rounded-md p-3 scale-95 duration-300 snap-center`} >
+            <div key={project.id} className={`flex flex-col items-start justify-between w-full max-h-96 shrink-0 border border-cyan-300 shadow shadow-cyan-500 rounded-md p-3 scale-95 duration-300 snap-center `} >
               <div className='rounded-lg overflow-hidden'>
                 <img src={project.image} alt='project image' className='h-40 hover:scale-105 duration-300'/>
               </div>
