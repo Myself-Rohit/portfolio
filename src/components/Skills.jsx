@@ -15,12 +15,12 @@ function Skills() {
 ]
     return (
         <div className='p-10 pb-0 flex flex-col items-center'>
-            <h1 className=' font-bold text-xl text-gray-400 text-center underline underline-offset-4'>My Skills</h1>
-            <div className='flex flex-wrap items-center justify-center gap-5 mt-7 p-5'>
+            <h1 className=' font-bold text-4xl text-gray-400 text-center p-4 rounded-xl shadow-md shadow-cyan-600 border border-cyan-400'>My Skills</h1>
+            <div className='flex flex-wrap items-center justify-center gap-5 mt-7 py-5'>
                 {
                     mySkills.map(skill => {
                         return (
-                            <div key={skill.id} className='w-20 h-20 sm:w-32 sm:h-32 border-b-2 hover:border-black hover:scale-95 border-cyan-600 p-2 rounded-full'>
+                            <div key={skill.id} className='w-20 h-20 sm:w-28 sm:h-28 border-b-2 hover:border-black hover:scale-95 border-cyan-600 p-3 rounded-full'>
                                 <img src={skill.image} className='w-full h-full' />
                             </div>
                         )
