@@ -25,7 +25,7 @@ function Home() {
                     </p>
                     
                     <Link smooth duration={800} to="contact">
-                        <div className="hover:scale-110 duration-300 bg-cyan-600 border-cyan-900 border hover:bg-blue-500 font-medium text-gray-300
+                        <div className="duration-300 bg-gradient-to-br from-cyan-400 to-cyan-800 font-medium text-gray-300 hover:bg-gradient-to-tl hover:scale-105 border border-cyan-700 cursor-pointer
              px-7 py-1 rounded-md inline-block">
                             Contact
                         </div>

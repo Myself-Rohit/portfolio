@@ -8,29 +8,24 @@ function Projects() {
       <h1 className="text-white text-4xl font-bold text-center">
           My<span className="text-cyan-600">Projects</span>
         </h1>
-      <div className='flex mx-auto mt-10 gap-x-2 max-w-[90%] overflow-auto relative snap-mandatory snap-x'>
+      <div className='h-96 w-full mt-10 pr-1 overflow-y-scroll'>
         {
-        projects.map(project => {
-          return (
-            <div key={project.id} className={`flex flex-col items-start justify-between w-full max-h-96 shrink-0 border border-cyan-300 shadow shadow-cyan-500 rounded-md p-3 scale-95 duration-300 snap-center `} >
-              <div className='rounded-lg overflow-hidden'>
-                <img src={project.image} alt='project image' className='h-40 hover:scale-105 duration-300'/>
-              </div>
-              <div className='mt-4 w-full'>
-                <div className='flex items-end gap-x-5 '>
-                  <h1 className='font-bold text-2xl text-cyan-500'>{project.title}</h1>
-                  <a href={project.url} target='_blank' className='px-4 py-1 cursor-pointer bg-cyan-500 hover:bg-cyan-700 active:scale-95  rounded'>view</a>
+          projects.map(project => {
+            return (
+              <div key={project.title} className='border border-cyan-600 rounded-md p-2 sm:p-4 flex flex-col items-center gap-y-5 mt-2 '>
+                <h1 className='text-3xl font-bold text-gray-400'>{project.title}<span className='text-gray-100'>{project.subtitle}</span></h1>
+                <a href={project.url} target='_blank' className='max-w-64 max-h-64 rounded overflow-hidden shadow-sm shadow-cyan-500'>
+                  <img  src={project.image} className='w-full h-full hover:scale-110 duration-300 hover:opacity-70' />
+                </a>
+                <div className='flex flex-col sm:flex-col-reverse items-center max-w-4xl gap-y-5 text-gray-400'>
+                  <a href={project.url} target='_blank' className='bg-gradient-to-br from-cyan-800 to-cyan-400 hover:bg-gradient-to-tl rounded-md px-5 py-1 text-white font-semibold hover:scale-105'>view</a>
+                  <p>{project.descripion}</p>
                 </div>
-                <p className='text-gray-400 mt-5'>{project.descripion}</p>
+
               </div>
-              <span className='grow'></span>
-              
-            </div>
-            
-          )
-        })
+            )
+          })
         }
-      
       </div>
       
     </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-scroll'
 import photoAbout from '../images/photoAbout.jpg'
 import Skills from './Skills'
 import resume from '../assets/Resume.pdf'
