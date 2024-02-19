@@ -1,5 +1,6 @@
 import React from 'react'
 import projects from './projectData.js'
+import '../App.css'
 
 function Projects() {
   
@@ -8,7 +9,7 @@ function Projects() {
       <h1 className="text-white text-4xl font-bold text-center">
           My<span className="text-cyan-600">Projects</span>
         </h1>
-      <div className='h-96 w-full mt-10 pr-1 overflow-y-scroll'>
+      <div className='h-96 w-full mt-10 pr-1 overflow-y-scroll scrollbar'>
         {
           projects.map(project => {
             return (
