@@ -1,6 +1,7 @@
 import starbooks from "../images/starbooks.png";
 import weatherapp from "../images/weatherapp.jpg";
 import blogpulse from "../images/blogpulse.png";
+import urlShortner from "../images/urlShortner.jpeg";
 const projects = [
 	{
 		title: "Blog",
@@ -17,6 +18,14 @@ const projects = [
 		url: "https://creative-faun-9f1d5a.netlify.app/",
 		descripion:
 			"StarBooks is a online bookstore website featuring cutting-edge technologies such as ReactJS with Vite, Tailwind CSS, React Router, and Redux Toolkit. Key features include dynamic routing, asynchronous API calls for book data, responsive design, efficient search functionality, detailed book information, cart management, seamless checkout via the Google Play Store, and indicators for online-offline mode switching. ",
+	},
+	{
+		title: "URL",
+		subtitle: "Shortner",
+		image: urlShortner,
+		url: "https://url-shortner-f642.onrender.com/",
+		descripion:
+			"The URL Shortener Website is a simple and efficient platform for managing and sharing links. Users can organize all their URLs in one place and generate short, shareable links with ease. Built with Express.js for the backend, MongoDB for the database, and EJS for server-side rendering, this project emphasizes simplicity, functionality, and efficient link management.",
 	},
 	{
 		title: "weather",

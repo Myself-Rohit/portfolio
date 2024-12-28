@@ -182,13 +182,10 @@ function Contact() {
 					/>
 				</a>
 
-				<a
-					href="https://www.facebook.com/profile.php?id=100025210593910"
-					target="_blank"
-				>
+				<a href="https://wa.me/917302270537" target="_blank">
 					<img
 						className="w-8 h-8 object-cover hover:scale-125 duration-300"
-						src="https://img.icons8.com/nolan/2x/facebook-new.png"
+						src="https://img.icons8.com/?size=100&id=43677&format=png&color=000000"
 					/>
 				</a>
 
