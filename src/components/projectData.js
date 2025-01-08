@@ -2,6 +2,7 @@ import starbooks from "../images/starbooks.png";
 import weatherapp from "../images/weatherapp.jpg";
 import blogpulse from "../images/blogpulse.png";
 import urlShortner from "../images/urlShortner.jpeg";
+import chatSphere from "../images/chatSphere.png";
 const projects = [
 	{
 		title: "Blog",
@@ -26,6 +27,13 @@ const projects = [
 		url: "https://url-shortner-f642.onrender.com/",
 		descripion:
 			"The URL Shortener Website is a simple and efficient platform for managing and sharing links. Users can organize all their URLs in one place and generate short, shareable links with ease. Built with Express.js for the backend, MongoDB for the database, and EJS for server-side rendering, this project emphasizes simplicity, functionality, and efficient link management.",
+	},
+	{
+		title: "Chat",
+		subtitle: "Sphere",
+		image: chatSphere,
+		descripion:
+			"ChatSphere is a real-time messaging application built with the MERN stack, designed to provide a secure and user-friendly communication experience. It features secure login, online status indicators, and a user search function, ensuring seamless connectivity and effortless interaction. Optimized for all devices.",
 	},
 	{
 		title: "weather",
