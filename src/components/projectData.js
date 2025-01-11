@@ -32,6 +32,7 @@ const projects = [
 		title: "Chat",
 		subtitle: "Sphere",
 		image: chatSphere,
+		url: "https://chatsphere-ow2i.onrender.com/",
 		descripion:
 			"ChatSphere is a real-time messaging application built with the MERN stack, designed to provide a secure and user-friendly communication experience. It features secure login, online status indicators, and a user search function, ensuring seamless connectivity and effortless interaction. Optimized for all devices.",
 	},
