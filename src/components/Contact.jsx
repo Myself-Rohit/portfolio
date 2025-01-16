@@ -2,18 +2,36 @@ import React, { useRef } from "react";
 import { number, object, string } from "yup";
 import { useFormik } from "formik";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 function Contact() {
 	const ref = useRef();
 
 	const sendMail = (e) => {
 		e.preventDefault();
-		emailjs.sendForm(
-			"service_gcjmqdv",
-			"template_iojxl7h",
-			ref.current,
-			"Gt2EtZ14Nvzj4naAr"
-		);
+		try {
+			if (
+				!ref.current[0].value ||
+				!ref.current[1].value ||
+				!ref.current[2].value ||
+				!ref.current[3].value
+			) {
+				throw new Error("All Fields required");
+			}
+			emailjs.sendForm(
+				"service_gcjmqdv",
+				"template_iojxl7h",
+				ref.current,
+				"Gt2EtZ14Nvzj4naAr"
+			);
+			ref.current[0].value = "";
+			ref.current[1].value = "";
+			ref.current[2].value = "";
+			ref.current[3].value = "";
+			toast.success("Send Successfully");
+		} catch (error) {
+			toast.error(error.message);
+		}
 	};
 
 	let validationSchema = object({
@@ -159,7 +177,7 @@ function Contact() {
 							}
 							className={`w-full active:bg-cyan-600 duration-200  bg-gradient-to-l from-cyan-600 to-cyan-900 font-medium text-gray-300 px-7 py-2 rounded-tl-3xl rounded text-center disabled:hover:bg-gradient-to-l hover:bg-gradient-to-bl disabled:cursor-not-allowed disabled:active:scale-100 active:scale-x-75 `}
 						>
-							send
+							S E N D
 						</button>
 					</form>
 				</div>

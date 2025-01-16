@@ -1,12 +1,13 @@
-import AppLayout from "./components/AppLayout"
+import { ToastContainer } from "react-toastify";
+import AppLayout from "./components/AppLayout";
 
 function App() {
-
-  return (
-    <>
-      <AppLayout />
-    </>
-  )
+	return (
+		<>
+			<AppLayout />
+			<ToastContainer />
+		</>
+	);
 }
 
-export default App
+export default App;

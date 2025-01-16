@@ -16,7 +16,6 @@ function About() {
 				<div className="sm:flex ">
 					<div className="flex flex-col justify-evenly bg-gradient-to-t from-slate-100 to-slate-500  p-4 sm:mr-4 rounded-2xl items-center ">
 						<p className="max-w-screen-md shrink-0">
-							{/* Hello there! I'm an aspiring web developer with a strong desire to break into the tech industry. I have a foundational understanding of HTML, CSS, Tailwind CSS, JavaScript, React, Redux, Git and Github. I'm eager to expand my skill set and delve deeper into the world of web development. I'm committed to continuous learning and growth, and I'm excited about the prospect of contributing to innovative projects and collaborating with like-minded professionals.  */}
 							Hello there! I am a aspiring web developer with a Bachelor's
 							degree in Computer Applications, set to graduate in 2025. I have a
 							solid foundation in HTML, CSS, Tailwind CSS, JavaScript, React,
