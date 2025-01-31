@@ -68,10 +68,10 @@ function Skills() {
 			<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 mt-7 py-5">
 				{mySkills.map((skill) => {
 					return (
-						<div className="bg-white flex items-center gap-2 px-2 py-1 rounded-md">
+						<div className="bg-gray-800 text-white  shadow shadow-slate-900 flex items-center gap-2 px-2 py-1 rounded-md">
 							<div
 								key={skill.id}
-								className="w-10 h-10 sm:w-20 sm:h-20 border-b-2 hover:border-black hover:scale-95 border-cyan-600 p-2 sm:p-3 rounded-full"
+								className="w-10 h-10 sm:w-16 sm:h-16 border-b-2 p-2 sm:p-3 rounded-r-full bg-gray-300 shadow-sm shadow-cyan-500 shrink-0"
 							>
 								<img src={skill.image} className="w-full h-full" />
 							</div>
