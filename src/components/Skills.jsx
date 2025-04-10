@@ -68,11 +68,11 @@ function Skills() {
 			<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 mt-7 py-5">
 				{mySkills.map((skill) => {
 					return (
-						<div className="bg-gray-800 text-white  shadow shadow-slate-900 flex items-center gap-2 px-2 py-1 rounded-md">
-							<div
-								key={skill.id}
-								className="w-10 h-10 sm:w-16 sm:h-16 border-b-2 p-2 sm:p-3 rounded-r-full bg-gray-300 shadow-sm shadow-cyan-500 shrink-0"
-							>
+						<div
+							key={skill?.id}
+							className="bg-gray-800 text-white  shadow shadow-slate-900 flex items-center gap-2 px-2 py-1 rounded-md"
+						>
+							<div className="w-10 h-10 sm:w-16 sm:h-16 border-b-2 p-2 sm:p-3 rounded-r-full bg-gray-300 shadow-sm shadow-cyan-500 shrink-0">
 								<img src={skill.image} className="w-full h-full" />
 							</div>
 							<p className="font-semibold">{skill.title}</p>
