@@ -18,7 +18,7 @@ function Contact() {
       stagger: 0.06,
       scrollTrigger: {
         trigger: ".title-contact",
-        start: "top 60%",
+        start: "top 70%",
         end: "top 30%",
         scrub: 1,
       },
@@ -42,7 +42,7 @@ function Contact() {
       y: 100,
       scrollTrigger: {
         trigger: ".input-contact",
-        start: "top 80%",
+        start: "top 90%",
         end: "top 70%",
 
         scrub: 1,

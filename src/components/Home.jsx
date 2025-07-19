@@ -60,7 +60,7 @@ function Home() {
               className="btn-contact inline-flex"
             >
               <button
-                className="duration-300 bg-gradient-to-br from-cyan-400 to-cyan-800 font-medium text-gray-300 hover:bg-gradient-to-tl hover:scale-105 border border-cyan-700 cursor-pointer
+                className="duration-300 bg-gradient-to-br from-cyan-400 to-cyan-800 font-medium text-gray-300 hover:bg-gradient-to-tl  border border-cyan-700 cursor-pointer
              px-7 py-1 rounded-md inline-flex"
               >
                 Contact

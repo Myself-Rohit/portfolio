@@ -17,7 +17,7 @@ function About() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".about-me",
-        start: "top 70%",
+        start: "top 60%",
         end: "top 30%",
         scrub: 1,
       },
@@ -33,10 +33,8 @@ function About() {
 
     tl.from(".about-left p", {
       opacity: 0,
-      x: -50,
-      duration: 0.3,
-      stagger: 0.06,
-      ease: "bounce",
+      xPercent: -100,
+      stagger: 0.08,
     });
     tl.from(imgRef.current, {
       x: 800,
