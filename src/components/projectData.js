@@ -17,7 +17,7 @@ const projects = [
 		title: "Star",
 		subtitle: "Books",
 		image: starbooks,
-		url: "https://creative-faun-9f1d5a.netlify.app/",
+		url: "https://starbookss.netlify.app",
 		source: "https://github.com/Myself-Rohit/starBooks",
 	},
 	{
